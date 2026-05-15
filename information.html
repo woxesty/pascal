@@ -1,0 +1,104 @@
+<html>
+ <head>
+  <title>Основы программирования на языке Паскаль</title>
+ </head>
+ <body background="image/f-3.jpg" bgcolor="#FFFFF0" vlink="#483D8B" link="#4169E1">
+  <table border="1" cellspacing="0" cellpadding="10" width="100%">
+  
+   <tr>
+    <td width="240" height="80">
+    <img src="image/logo.png" alt="Логотип" width="260" height="108">
+    </td>
+    
+    <td align="center">
+    <font size="5" color="#483D8B"><b>Общие сведения о языке программирования Паскаль</b></font>
+    </td>
+   </tr>
+   
+   
+   <tr>
+    <td valign="top">
+    <p><a href="index.html">Главная страница</a></p>
+    <p><a href="information.html">Общие сведения</a></p>
+    <p><a href="algorithm.html">Программирование различных алгоритмов</a></p>
+    <p><a href="task.html">Галерея задач</a></p>
+    </td>
+    
+    <td valign="top">
+    <font>
+    <h3 align="center">Интерфейс системы программирования PascalABC.NET</font></h3>
+    <p>Справочные сведения об элементах интерфейса среды программирования PascalABC.NET.</p>
+    <div class="iactiveImg" data-ii="70928"></div><script src="https://interactive-img.com/js/include.js"></script>
+    <h3 align="center">Алфавит и словарь языка</font></h3>
+    <p>Основой языка программирования Паскаль, как и любого другого языка, 
+    является <b>алфавит</b> — набор допустимых символов, которые можно использовать 
+    для записи программы. Это:</p>
+    <ul>
+     <li>латинские прописные буквы (A, B, C, ..., X, Y, Z);</li>
+     <li>латинские строчные буквы (a, b, c, ..., x, y, z);</li>
+     <li>арабские цифры (0, 1, 2, ..., 7, 8, 9);</li>
+     <li>специальные символы (знак подчёркивания; знаки препинания; 
+     круглые, квадратные и фигурные скобки; знаки арифметических операций и др.).</li>
+    </ul>
+    <p>В качестве неделимых элементов (составных символов) рассматриваются 
+    следующие последовательности символов:</p>
+    <ul>
+     <li>:= (знак операции присваивания);</li>
+     <li>&gt;= и &lt;= (знаки "больше или равно" и "меньше или равно");</li>
+     <li>&lt;&gt; (знак "не равно");</li>
+     <li>// (начало строчного комментария).</li>
+    </ul>
+    <p>В языке существует также некоторое количество различных цепочек символов, 
+    рассматриваемых как единые смысловые элементы с фиксированным значением. 
+    Такие цепочки символов называются <b>служебными словами</b>. 
+    Вы можете ознакомиться с GIF-анимацией, на которой приведены основные служебные слова, 
+    которые мы будем использовать при записи программ на языке Паскаль.</p>
+    <img src="image/Pascal.gif" alt="Анимация с служебными словами" width="600" height="202">   
+    
+    <h3 align="center">Типы данных, используемые в языке Паскаль</h3>
+    <p>В языке Паскаль используются различные типы данных.
+       Мы будем пользоваться некоторыми из так называемых простых типов данных</p>
+    <table border="1" cellspacing="0" cellpadding="3" align="center">
+    <tr><th width="120">Название</th><th width="120">Обозначение</th><th>Допустимые значения</th></tr>
+    <tr><td>Целочисленный</td><td><font face="Consolas">integer</font></td><td>-2 147 483 648 ... 2 147 483 647</td></tr>
+    <tr><td>Вещественный</td><td><font face="Consolas">real</font></td><td>-1.8&times;10<sup>308</sup> ... 1.8&times;10<sup>308</sup></td></tr>
+    <tr><td>Символьный</td><td><font face="Consolas">char</font></td><td>Произвольный символ</td></tr>
+    <tr><td>Строковый</td><td><font face="Consolas">string</font></td><td>Последовательность символов произвольной длинны</td></tr>
+    <tr><td>Логический</td><td><font face="Consolas">boolean</font></td><td>True и False</td></tr>
+    </table>
+    
+    <h3 align="center">Структура программы на языке Паскаль</h3>
+    <p>В программе, записанной на языке Паскаль, можно выделить:</p>
+    <ol>
+     <li>заголовок программы;</li>
+     <li>раздел uses;</li>
+     <li>раздел описания используемых данных;</li>
+     <li>раздел описания действий по преобразованию данных (программный блок).</li>
+    </ol>
+    <p>Ниже приведён общий вид программы:</p>
+    <p><font face="Consolas">program &lt;имя программы&gt;;<br>
+    uses &lt;список модулей&gt;;<br>
+    const &lt;список постоянных значений&gt;;<br>
+    var &lt;описание используемых переменных&gt;;<br>
+    begin<br>
+    &nbsp;&nbsp;&lt;оператор 1&gt;;<br>
+    &nbsp;&nbsp;&lt;оператор 2&gt;;<br>
+    &nbsp;&nbsp;...<br>
+    &nbsp;&nbsp;&lt;оператор N&gt;<br>
+    end.</font></p>
+    <p>В этом коротком интерактивном видео мы разберем структуру программы на языке Pascal</p>
+    <iframe src="https://udoba.org/h5p/embed/305118" width="920" height="579" frameborder="0" 
+    allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" 
+    title="Структура программы на языке Паскаль">
+    </iframe><script src="https://udoba.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+    <a href="https://udoba.org/node/305118 " target="_blank">
+    Ссылка для просмотра видеоролика на сервисе "УДОБА"</a>
+    </td>
+    </font>
+   </tr>
+   
+  </table>
+ </body>
+</html>
+
+
